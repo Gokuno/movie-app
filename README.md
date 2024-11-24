@@ -1,7 +1,22 @@
-# Getting Started with Create React App
+# Movie Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based client application for interacting with a Movie API. This application allows users to view a list of movies, watch trailers, and manage reviews for movies.
 
+## Features
+
+- **Home Page**: Displays a carousel of movies with posters, titles, and buttons to watch trailers or view reviews.
+- **Trailers**: Allows users to watch movie trailers using YouTube links.
+- **Reviews**: Users can read and submit reviews for movies.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+
+## Technologies Used
+
+- **React**: Frontend framework.
+- **React Router**: For navigation.
+- **Axios**: For API calls.
+- **Bootstrap**: Styling and layout components.
+- **Material-UI**: Carousel component.
+- **FontAwesome**: For icons.
 ## Available Scripts
 
 In the project directory, you can run:
@@ -68,3 +83,48 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Components Overview
+Header
+File: components/header/Header.js
+Description: Provides the navigation bar, branding, and login/register buttons.
+
+Hero
+File: components/hero/Hero.js
+Description: Displays a carousel of movies with options to watch trailers or view reviews.
+
+Trailer
+File: components/trailer/Trailer.js
+Description: Embeds YouTube trailers using ReactPlayer.
+
+Reviews
+File: components/reviews/Reviews.js
+Description: Allows users to view and add reviews for movies.
+
+Review Form
+File: components/reviewForm/ReviewForm.js
+Description: A form for submitting new reviews.
+
+NotFound
+File: components/notFound/NotFound.js
+Description: Displays a fallback for undefined routes.
+
+Layout
+File: components/Layout.js
+Description: Wraps the routes and ensures consistent layout.
+
+API Integration
+The application interacts with a backend Movie API.
+
+Endpoints:
+GET /api/v1/movies: Fetches all movies.
+GET /api/v1/movies/{movieId}: Fetches details of a single movie.
+POST /api/v1/reviews: Submits a new review.
+
+Future Enhancements
+Add user authentication for managing reviews.
+Enable a "Watchlist" feature.
+Improve error handling for API calls.
+Add pagination for large movie collections.
+
+Jorge Allan Paz Garza
